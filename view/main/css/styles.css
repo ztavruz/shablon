@@ -1,0 +1,195 @@
+*{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+/*HEADER*/
+.header{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+}
+.burger_menu__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: 1px solid red;
+}
+
+.nav_gorizont__container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px !important;
+    width: 80%;
+    justify-content: space-around;
+
+}
+.nav_gorizont__container a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2a2a2a;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+.nav_gorizont__container a:hover{
+    border: 1px solid #000;
+
+}
+
+.burger_menu__button{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 30;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #2a2a2a;
+}
+
+.burger_menu__lines::before,
+.burger_menu__lines,
+.burger_menu__lines::after{
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+
+.burger_menu__lines{
+    top: 24px;
+    left: 12px;
+}
+.burger_menu__lines::before{
+    content: "";
+    top: -7px;
+}
+.burger_menu__lines::after{
+    content: "";
+    top: 7px;
+}
+.burger_menu__button:hover .burger_menu__lines{
+    filter:brightness(0.7);
+}
+
+.burger_menu__active .burger_menu__lines{
+    background: transparent;
+}
+.burger_menu__active .burger_menu__lines::before{
+    top: 0;
+    transform: rotate(45deg);
+}
+.burger_menu__active .burger_menu__lines::after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.burger_menu__nav{
+    padding-top: 80px !important;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: #2a2a2a;
+    overflow-y: auto;
+    left: -100%;
+}
+.burger_menu__active .burger_menu__nav{
+    left: 0;
+}
+.burger_menu__link{
+    padding: 20px !important;
+    font-family: sans-serif;
+    font-size: 22px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.burger_menu__link:hover{
+    color: #fff;
+    filter: brightness(0.6) !important;
+}
+
+.burger_menu__overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+.burger_menu__active .burger_menu__overlay{
+    display: block !important;
+    /*background-color: red;*/
+}
+
+.logo_container{
+    width: 200px;
+    height: 110px;
+    border: 3px solid #000;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.logo_img{
+    background-image: url("/../content/img/maestro_logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+}
+.logo_title{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/*CONTENT*/
+.carousel{
+    max-height: 500px !important;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BODI*/
+.section{
+    height: 400px;
+    /*border: 1px solid #000;*/
+}

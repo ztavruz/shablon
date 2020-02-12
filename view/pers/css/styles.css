@@ -1,0 +1,51 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.slot{
+    background: silver;
+    border: 2px solid #000;
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+}
+.parameters{
+
+}
+.amunition{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.slots_left{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.slots_center{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.slots_right{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.amunition_title{
+    
+}
+.slots_implants{
+    
+}
+.img_center{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.slot{
+
+}
